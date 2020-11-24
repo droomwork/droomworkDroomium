@@ -15,9 +15,10 @@ export const Card =()=>{
                 <div className=''>
                  <Image
                  src='/blog-medium-img3.jpg'
-                 width={300}
-                 height={300}
+                 width={100}
+                 height={100}
                  alt='Hoem Page'
+                 layout='responsive'
                  
                /> 
                 </div>
@@ -40,9 +41,10 @@ export const Card =()=>{
         <div className=''>
         <Image
                  src='/blog-medium-img2.jpg'
-                 width={300}
-                 height={300}
+                 width={100}
+                 height={100}
                  alt='Prepare for Job'
+                 layout='responsive'
                  
                />
         </div>
