@@ -1,15 +1,24 @@
 import React from 'react'
-import {Header} from '../../components/Header'
-import styles from '../../styles/Article.module.css'
-import Image from 'next/image'
+import {Header} from '../../components/Header';
+import {SmallHeader} from '../../components/SmallHeader';
+import styles from '../../styles/Article.module.css';
+import Image from 'next/image';
+import Link from 'next/link';
+import {useWindowWidthAndHeight} from '../../hooks';
+import {Footer} from '../../components/Footer';
 
 
 
 
  const Post =()=>{
+     const [width] = useWindowWidthAndHeight();
     return(
         <>
-        <Header/>
+        {
+             width < 640 ? <SmallHeader/> :<Header/>
+        }
+        <div className={styles.full_post_main}>
+            
         <article className={styles.full_post}>
             <header className={styles.full_post_header }>
                 <section>
@@ -18,11 +27,12 @@ import Image from 'next/image'
                 <h1 className={styles.full_post_heading}>How to prepare for a Job</h1>
             </header>
 
-            <figure className=/*{styles.full-post-img}*/''>
+            <figure className={styles.full_post_img}>
                <Image
                  src='/blog-medium-img1.jpg'
-                 width={300}
-                 height={300}
+                 layout='responsive'
+                 width={350}
+                 height={250}
                  alt='Prepare for Job'
                  
                />
@@ -38,11 +48,23 @@ import Image from 'next/image'
                         approaches apply to more than just Javascript &amp; Jest testing for dates and times.</p>
                 </div>
             </section>
-
-
         </article>
-        
+        <div className={styles.full_post_related}>
+        <div className={styles.full_post_links}>
+            <h2>Related Articles</h2>
+            <li><Link  href=''><a>The Remote Road map</a></Link></li>
+            <li><Link  href=''><a>The Remote Road map</a></Link></li>
+            <li><Link  href=''><a>The Remote Road map</a></Link></li>
+            <li><Link  href=''><a>The Remote Road map</a></Link></li>
+            <li><Link  href=''><a>The Remote Road map</a></Link></li>
+        </div>
+        </div>
+       
+        </div>
 
+       
+        
+        <Footer/>
         </>
  
 

@@ -1,20 +1,28 @@
 .header{
     margin-top: 0;
-    height: 150px;
-    width: 100%;
- 
+    height: 50px;
+    width: 100%; 
+    background-color: #001935;
 }
 .header_nav{
+
     display: flex;
     justify-content: space-between; 
-    margin-top: 10px; 
+    margin-top: 0; 
+    margin-right: 20px;
+    margin-left: 20px;
     height: 50px;  
-    padding: 0;
+    /* padding: 10px 0px 10px 0px; */
    
 }
 .header_brand{
     margin-right: 15px;
     padding: 10px;
+
+}
+.header_brand img{
+    width: 40px;
+    height: 30px;
 }
 .header_links li{
     display: inline-block;
@@ -24,11 +32,87 @@
 .header_links a{
     font-family: Arial, Helvetica, sans-serif;
     font-size: 1.0rem;
-    opacity: 0.5;
+    color: white;
 }
 .header_links a:hover{
-    color: yellow;
-    border-bottom: 3px solid yellow;
+    color: #FF8A00;
+    border-bottom: 3px solid #FF8A00;
     padding-bottom: 5px;
     opacity: 1;
+}
+.nav_icon{
+    font-size: 1.3rem;
+    position: absolute;
+    bottom: 0;
+    top :10px;
+    width: 40px;
+    height: 35px;
+    right: 30px;
+    outline: none;
+    background-color: #FF8A00;
+    color: whitesmoke;
+    cursor: pointer;
+    border: none;
+    
+}
+.small_header_links{
+    display: flex; 
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+
+   /* margin: auto; */
+    
+    /* height: 40%;
+    margin-top: 50px; */
+   
+    /* right:300px; */
+    /* background-color: black; */
+   
+  
+}
+
+.small_header_links li{
+    list-style-type: none;
+    text-decoration: none;
+    padding: 10px 25px 10px 25px;
+    
+    
+}
+.small_header_links a{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.0rem;
+    color: white;
+    display: block;
+    text-align: left;
+}
+.small_header_links a:hover{
+    color: #FF8A00;
+    padding-bottom: 5px;
+    opacity: 1;
+}
+ .small_nav_widget{
+  background-color: black;
+  display: block;
+    height: 35vh;
+    width: 200px;
+    position: absolute;
+    right: 30px;
+    top: 40px;
+    margin-top: 10px;
+    
+    
+    
+} 
+.addTransition{
+    z-index: 3;
+    position: relative;
+    margin-bottom: 30px;
+    transform: translateX(20px);
+    transition: transform 0.5s ease-in-out;
+}
+.removeTransition{
+    display:none;
+    /* transform: translateX(20px); */
+    transition: transform 0.5s ease-in-out;
 }

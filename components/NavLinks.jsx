@@ -1,10 +1,10 @@
 
 import React from 'react';
 import Link from 'next/link';
-import styles from '../styles/Header.module.css'
+//import styles from '../styles/Header.module.css'
 
-export const NavLinks=()=>(
-    <div className={styles.header_links}>
+export const NavLinks=({navLinksClassName})=>(
+    <div className={navLinksClassName}>
     <ul>
         <li>
             <Link href='/category'><a>Tech</a></Link>
@@ -22,3 +22,5 @@ export const NavLinks=()=>(
     </ul>
 </div>
 )
+
+//styles.header_links
