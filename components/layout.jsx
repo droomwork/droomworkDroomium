@@ -10,7 +10,7 @@ const [width] = useWindowWidthAndHeight();
     return(
         <div>{
             width < 640 ? <SmallHeader/> :<Header/>
-        } 
+        }
         
        {children}
 

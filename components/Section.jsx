@@ -1,17 +1,17 @@
 import React from 'react'
-import Card from './Card'
+import {RecentStories}  from './Recent/RStories'
+import RecentHowTo from './Recent/RHow_to'
+import RecentTechBiz from './Recent/RTechBiz'
 //import styles from '../styles/Section.module.css'
 
 export const Section =()=>{
     return(
         <div>
-         <section className=''>
-             <div className=''>
-                <Card/>
-             
-               
-             </div>
-         </section>
+         <main className=''>
+                <RecentHowTo/>  
+                <RecentStories/>
+                <RecentTechBiz/>             
+         </main>
          </div>
     )
 }

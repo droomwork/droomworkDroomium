@@ -1,11 +1,12 @@
-import React from 'react'
+import React from 'react';
+import Image from 'next/image';
+import Link  from 'next/link';
+import Head  from 'next/head';
 import {Header} from '../../components/Header';
 import {SmallHeader} from '../../components/SmallHeader';
-import styles from '../../styles/Article.module.css';
-import Image from 'next/image';
-import Link from 'next/link';
-import {useWindowWidthAndHeight} from '../../hooks';
 import {Footer} from '../../components/Footer';
+import {useWindowWidthAndHeight} from '../../hooks';
+import styles from '../../styles/Article.module.css';
 
 
 
@@ -14,6 +15,11 @@ import {Footer} from '../../components/Footer';
      const [width] = useWindowWidthAndHeight();
     return(
         <>
+        <Head>
+        <title>How to prepare for a job</title>
+        <meta name="viewport" content="initial-scale=1.0, width=device-width" key="viewport" />
+        <meta name="description" content="Place the meta description text here."/>
+        </Head>
         {
              width < 640 ? <SmallHeader/> :<Header/>
         }
@@ -46,7 +52,12 @@ import {Footer} from '../../components/Footer';
                          data along with a strategy to synchronize and store date times consistently across systems early on b
                             oth helps testing and makes for a better user experience.</p><p>These tips and 
                         approaches apply to more than just Javascript &amp; Jest testing for dates and times.</p>
+
+                        
+                      
+                     
                 </div>
+
             </section>
         </article>
         <div className={styles.full_post_related}>

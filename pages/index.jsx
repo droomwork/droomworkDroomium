@@ -1,16 +1,21 @@
-//import Head from 'next/head'
-//import styles from '../styles/Home.module.css'
+import Head from 'next/head'
 import {Layout} from '../components/layout'
 import {Section} from '../components/Section'
 
 export default function Home() {
   return (
+
        <div className=''>
+         <Head>
+           <title>Droomium: Your Remote IT Blog for developers</title>
+           <meta name='description' content='A blog built for the remote community'/>
+         </Head>
          <Layout>
            <Section/>
            </Layout>
-          
        </div>
+
+       
   )
 }
 

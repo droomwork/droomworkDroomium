@@ -33,7 +33,7 @@ import {Footer} from '../../components/Footer';
             
                 <div className={styles.cat_card_body}>
                     <small>5hrs ago</small>
-                    <Link href='/articles'><a><h3 >My First Remote Job</h3></a></Link>
+                    <Link href='/how_to'><a><h3 >My First Remote Job</h3></a></Link>
 
                     <p>
                     The reason may not be evident here because 
@@ -71,7 +71,7 @@ import {Footer} from '../../components/Footer';
                 
                 <div className={styles.cat_card_body}>
                     <small>9days ago</small>
-                    <Link href='/articles'><a><h3 >My First Remote Job</h3></a></Link>
+                    <Link href='/how_to'><a><h3 >My First Remote Job</h3></a></Link>
 
                     <p >
                     The reason may not be evident here because 
@@ -95,8 +95,7 @@ import {Footer} from '../../components/Footer';
         </div>
 
         <div className={styles.cat_layout}>
-        <Link href='/articles'>
-        <a>
+     
             <div className={styles.cat_card}>
                 <Image
                  src='/blog-medium-img2.jpg'
@@ -109,7 +108,7 @@ import {Footer} from '../../components/Footer';
      
                 <div className= {styles.cat_card_body}>
                 <small>7hrs ago</small>
-                <Link href='/articles'><a><h3 >My First Remote Job</h3></a></Link>
+                <Link href='/how_to'><a><h3 >My First Remote Job</h3></a></Link>
                     <p className=''>
                     The reason may not be evident here because 
                     the flex-direction is changed.
@@ -127,8 +126,7 @@ import {Footer} from '../../components/Footer';
     
                     </div>
             </div>
-        </a>
-        </Link>
+       
         </div>
 
         <div className={styles.cat_layout}>
@@ -146,7 +144,7 @@ import {Footer} from '../../components/Footer';
                 
                 <div className={styles.cat_card_body}>
                     <small>7hrs ago</small>
-                    <Link href='/articles'><a><h3 >My First Remote Job</h3></a></Link>
+                    <Link href='/how_to'><a><h3 >My First Remote Job</h3></a></Link>
                     <p>
                     The reason may not be evident here because 
                     the flex-direction is changed.

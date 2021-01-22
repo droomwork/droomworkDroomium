@@ -7,17 +7,17 @@ export const NavLinks=({navLinksClassName})=>(
     <div className={navLinksClassName}>
     <ul>
         <li>
-            <Link href='/category'><a>Tech</a></Link>
+            <Link href='/category/TechBiz'><a>TechBiz</a></Link>
             </li>
             <li>
-            <Link href='/category'><a>Remote Job</a></Link>
+            <Link href='category/how_to'><a>How To</a></Link>
             </li>
 
             <li>
-            <Link href='/category'><a>Developer</a></Link>
+            <Link href='category/stories'><a>Stories</a></Link>
             </li>
             <li>
-            <Link href='/category'><a>Product Manager</a></Link>
+            <Link href='/category'><a>Lifestyle</a></Link>
         </li>
     </ul>
 </div>

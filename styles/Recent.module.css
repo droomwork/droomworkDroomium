@@ -1,23 +1,20 @@
-.cat_label{
-    display:flex;
-    justify-content: center;
-    align-items: center;
-    margin: 0;
-    width: 100%;
+.r_header{
+    margin-left: 120px;
 }
-.cat_label h1{
-    text-align: center;
-    font-size: large;
+.r_header a:hover{
+   cursor: pointer;
+   border-bottom: 3px solid #FF8A00;
+   color: #FF8A00;
 }
 
-.cat_container{
+.r_cat_container{
     width: 100%;
     margin:40px 0px 0px 0px;
     padding: 0px;
     /* z-index: -1;
     position: relative; */
 }
-.cat_inner{
+.r_cat_inner{
     max-width: 100%;
     margin-right: 50px;
     margin-left: 50px;
@@ -31,11 +28,11 @@
     /* z-index: 0 ;
     position: relative; */
 }
-.cat_layout{
-    flex:0 1 35%;
+.r_cat_layout{
+    flex:0 1 30%;
   
 }
-.cat_card{
+.r_cat_card{
     width: 90%;
     height: 45%;
     margin: 1rem;
@@ -48,18 +45,18 @@
      
 }
 
-.cat_card_body{
+.r_cat_card_body{
     padding: 1rem 1rem 0 1rem;
    
 }
-.cat_card_body h3{
+.r_cat_card_body h3{
     color:#001935;
 }
-.cat_card_body h3:hover{
+.r_cat_card_body h3:hover{
     /* border-bottom: 1px solid #FF8A00; */
     color: #FF8A00;
 }
-.cat_card_footer{
+.r_cat_card_footer{
     padding: 0 1rem 0.5rem 1rem;
     display: flex;
     justify-content: space-between;
@@ -67,25 +64,25 @@
     z-index: 1;
     position: relative;
 }
-.cat_card_tags a{
+.r_cat_card_tags a{
   padding-right: 5px;
   cursor: pointer;
   line-height: 1rem;
  
 }
-.cat_card_tags small:hover{
+.r_cat_card_tags small:hover{
     border-bottom: 1px solid #FF8A00;
     color: #FF8A00;
     
   }
 
 
-.cat_card_pagination{
+.r_cat_card_pagination{
     display:inline-block;
     margin-left: 240px;
     margin-top: 20px;
 }
-.cat_card_pagination a{
+.r_cat_card_pagination a{
     padding: 20px;
     margin: 10px;
     text-align: center;
@@ -97,13 +94,16 @@
     background-color: #fff;
 
 }
-.cat_card_pagination a.active{
+.r_cat_card_pagination a.active{
     background-color:#001935 ;
     color:white
 }
 
 @media (max-width:600px){
-    .cat_inner{
+    .r_header{
+        margin-left: 15px;
+    }
+    .r_cat_inner{
         width: 100%;
         flex-direction: column;
         justify-content: center;
@@ -111,7 +111,7 @@
         margin-left: 0px;
         margin-right: 0px;
     }
-    .cat_card_pagination a{
+    .r_cat_card_pagination a{
           position: relative;
           right: 160px;
     }
